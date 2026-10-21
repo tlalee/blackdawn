@@ -303,12 +303,14 @@
 
   /* ── KINEK SZÓL – KÉP ELŐKÉSZÍTÉS ── */
   .audience-img-wrap {
-    width:100%; height:180px; border-radius:8px; overflow:hidden;
+    width:100%; height:200px; border-radius:8px; overflow:hidden;
     background:var(--card-mid); margin-bottom:1rem;
-    display:flex; align-items:center; justify-content:center;
-    border:1px dashed rgba(196,147,154,0.35);
   }
-  .audience-img-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+  .audience-img-wrap img {
+    width:100%; height:100%;
+    object-fit:cover; object-position:center 30%;
+    display:block; border-radius:8px;
+  }
   .audience-img-placeholder { font-size:2.5rem; opacity:0.3; }
 
   @media (max-width:768px) {
@@ -336,7 +338,6 @@
     <a href="#smc">SMC</a>
     <a href="#bemutatkozas">Bemutatkozás</a>
     <a href="#szolgaltatasok">Szolgáltatások</a>
-    <a href="#arlista">Árlista</a>
     <a href="#kapcsolat" class="nav-cta">Kapcsolat</a>
   </div>
   <button class="hamburger" onclick="toggleMenu()" aria-label="Menü"><span></span><span></span><span></span></button>
@@ -346,7 +347,6 @@
   <a href="#smc" onclick="closeMenu()">SMC</a>
   <a href="#bemutatkozas" onclick="closeMenu()">Bemutatkozás</a>
   <a href="#szolgaltatasok" onclick="closeMenu()">Szolgáltatások</a>
-  <a href="#arlista" onclick="closeMenu()">Árlista</a>
   <a href="#kapcsolat" onclick="closeMenu()">Kapcsolat</a>
 </div>
 
@@ -427,7 +427,7 @@
           </ul>
         </div>
         <div class="audience-card">
-          <div class="audience-img-wrap"><!-- KÉP: <img src="szervezet.jpg" alt="Sportszervezeteknek"> --><div class="audience-img-placeholder">🏟</div></div>
+          <div class="audience-img-wrap"><img src="kinek_sportszervezet.jpg" alt="Sportszervezeteknek"></div>
           <h4>Sportszervezeteknek</h4>
           <ul class="audience-list">
             <li>Hatékonyság növelése a cél</li>
@@ -569,58 +569,7 @@
   </div>
 </section>
 
-<hr class="section-divider">
 
-<section id="arlista">
-  <div class="section-inner">
-    <!--<span class="section-tag">● Árlista</span>
-    <h2>Válaszd ki a <em>neked valót</em></h2> -->
-   <!-- <p class="lead-text">Áttekinthető, rugalmas csomagok – mert a fejlesztés ne legyen akadály kérdése.</p> -->
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3>0. ülés</h3>
-        <div class="price">8 000 <span>Ft</span></div>
-        <div class="price-sub">/ 30 perces ülés</div>
-        <ul class="pricing-features">
-          <li>Telefonon vagy online</li>
-          <li>Bemutatkozás</li>
-          <li>Célok és igények felmérése</li>
-          <li>Személyre szabott javaslat</li>
-          <li>Coaching ülések menetének részletes bemutatása</li>
-          
-        </ul>
-        <a href="#kapcsolat" class="pricing-btn pricing-btn-outline">Foglalok időpontot</a>
-      </div>
-      <div class="pricing-card featured">
-        <h3>Egyéni SMC ülések</h3>
-        <div class="price">35 000 <span>Ft</span></div>
-        <div class="price-sub">/ 60 perc</div>
-        <ul class="pricing-features">
-          <li>60 perc /alkalom</li>
-          <li>Online vagy személyesen</li>
-          <li>Egyéni fejlesztési terv közös kidolgozása</li>
-          <li>Konkrét mentális eszközök alkalmazása</li>
-          <li>Ülések közötti kommunikáció lehetősége</li>
-        </ul>
-        <a href="#kapcsolat" class="pricing-btn pricing-btn-accent">Ezt választom</a>
-      </div>
-      <!--<div class="pricing-card">
-        <h3>Komplex program</h3>
-        <div class="price">65 000 <span>Ft</span></div>
-        <div class="price-sub">/ 10 alkalom (3 hónapos program)</div>
-        <ul class="pricing-features">
-          <li>10 × 60 perces ülés</li>
-          <li>Mélyreható fejlesztési folyamat</li>
-          <li>Verseny- és edzéskövetés</li>
-          <li>Folyamatos elérhetőség</li>
-          <li>Haladás mérése és értékelése</li>
-          <li>Online vagy személyesen</li>
-        </ul>
-        <a href="#kapcsolat" class="pricing-btn pricing-btn-outline">Részleteket kérek</a>
-      </div> -->
-    </div>
-  </div>
-</section>
 
 <hr class="section-divider">
 
